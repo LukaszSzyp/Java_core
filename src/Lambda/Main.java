@@ -1,5 +1,9 @@
 package Lambda;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -8,5 +12,10 @@ public class Main {
 
         Power power = a -> a*a;
         System.out.println(power.Powering(2));
+        System.out.println("-----------------------------");
+
+        List<Integer> integerList= Arrays.asList(1,2,3,4,5,6,7,8);
+
+        integerList.forEach(element -> System.out.println(element));
     }
 }
